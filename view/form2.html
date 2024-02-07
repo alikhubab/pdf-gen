@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Reader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+   <div class="container">
+      <h2>Logo</h2>
+      <form id="dataForm2" action="/submitForm2" method="POST">
+        <h4>B. Eligibility Criteria & Experience</h4>
+        <!-- Add your fields for experience, credentials, infrastructure, manpower, financials, etc. here -->
+    
+        <h6>12. Experience & Credentials</h6>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="yearsExperience">Number of Years of Experience in RTPV business:</label>
+              <input type="number" class="form-control" id="yearsExperience" name="yearsExperience" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="totalCapacity">Total Cumulative Installed Capacity (in kW):</label>
+              <input type="number" class="form-control" id="totalCapacity" name="totalCapacity" required />
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="onGrid">On-Grid (in kW):</label>
+              <input type="number" class="form-control" id="onGrid" name="onGrid" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="offGrid">Off-Grid (in kW):</label>
+              <input type="number" class="form-control" id="offGrid" name="offGrid" required />
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="size5to10">05kW - 10kW</label><br />
+                <input type="text" id="size5to10" name="size5to10" class="form-control" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="size10to20">> 10kW - 20kW</label><br />
+                <input type="text" id="size10to20" name="size10to20" class="form-control" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="size20to50">> 20kW - 50kW</label><br />
+                <input type="text" id="size20to50" name = "size20to50" class="form-control" />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="sizeOver50">> 50kW</label><br /><br />
+                <input type="text" id="sizeOver50" name="sizeOver50" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mb-3">
+              <label for="customerReferences">Customer Reference and Past Performance Certificates (Customer List & Performance Certificate):</label>
+              <textarea class="form-control" id="customerReferences" name="customerReferences" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="networkCoverage">Network Coverage (Name & Number of Districts/City Covered):</label>
+              <textarea class="form-control" id="networkCoverage" name="networkCoverage" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="endCustomerSegment">End Customer Segment:</label>
+              <textarea class="form-control" id="endCustomerSegment" name="endCustomerSegment" required></textarea>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Infrastructure & Manpower Section -->
+        <h6>13. Infrastructure & Manpower</h6>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="ownSpace">Own Space Available (Office / Warehouse / Godown):</label>
+              <input type="text" class="form-control" id="ownSpace" name="ownSpace" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="salesManpower">Manpower – Sales (In Numbers):</label>
+              <input type="number" class="form-control" id="salesManpower" name="salesManpower" required />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="manpowerSurvey">Manpower – Survey (In Numbers):</label>
+                <input type="number" class="form-control" id="manpowerSurvey" name="manpowerSurvey" required />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="manpowerTechnical">Manpower – Technical (Design & Engineering) (In Numbers):</label>
+                <input type="number" class="form-control" id="manpowerTechnical" name="manpowerTechnical" required />
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="manpowerProcurement">Manpower – Procurement (In Numbers):</label>
+                <input type="number" class="form-control" id="manpowerProcurement" name="manpowerProcurement" required />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="manpowerIc">Manpower – I&C (In Numbers):</label>
+                <input type="number" class="form-control" id="manpowerIc" name="manpowerIc" required />
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="manpowerAMC">Manpower – AMC (In Numbers):</label>
+                <input type="number" class="form-control" id="manpowerAMC" name="manpowerAMC" required />
+              </div>
+            </div>
+        </div>
+        <h6>14. Financials</h6>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="turnover">Turnover:</label>
+              <input type="number" class="form-control" id="turnover" name="turnover" required />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Next</button>
+      </form>
+    </div>
+  </body>
+</html>
