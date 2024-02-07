@@ -4,6 +4,7 @@ const app = express();
 const fs = require('fs');
 const pdf = require('html-pdf');
 const jsonData = require('./data.json');
+const outputPath = 'output.pdf';
 const cors = require('cors')
 const nodemailer = require("nodemailer");
 let base64Images = {
